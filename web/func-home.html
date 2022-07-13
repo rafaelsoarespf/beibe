@@ -27,20 +27,18 @@
         </div>
         <div>
           <ul class="navi">
+
             <li class="active">
-              <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a>
-            </li>
-            <li>
-              <a href="client-home.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Painel do cliente</span></a>
-            </li>
-            <li>
               <a href="func-home.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Painel do funcionário</span></a>
+                  class="hidden-xs hidden-sm">Atendimentos</span></a>
             </li>
             <li>
-              <a href="gerente-home.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Painel do gerente</span></a>
+              <a href="func-categ.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Categorias</span></a>
+            </li>
+            <li>
+              <a href="func-prod.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Produtos</span></a>
             </li>
 
           </ul>
@@ -63,42 +61,11 @@
           <div class="row">
             <!-- INICIO DE CONTEÚDO  -->
 
-            <!-- Filtro  -->
 
-            <div class="pt-3 col-md-5 col-sm-5">
-              <div class="sales">
-                <h2>Your Sale</h2>
-
-                <div class="btn-group">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <span>Period:</span> Last Year
-                  </button>
-                  <div class="dropdown-menu">
-                    <a href="#">2012</a>
-                    <a href="#">2014</a>
-                    <a href="#">2015</a>
-                    <a href="#">2016</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Barra de pesquisa  -->
-
-            <div class="search col-5 pt-3">
-              <input type="text" placeholder="Search" id="search" />
-            </div>
-
-            <!-- Botão para abrir modal  -->
-
-            <li class="pt-4">
-              <a href="#" class="add-modal" data-toggle="modal" data-target="#modal-project">Add Project</a>
-            </li>
 
             <!-- Texto Título -->
             <div class="w-100">
-              <h2 class="text-center">Meus Atendimentos</h2>
+              <h2 class="text-center">Atendimentos</h2>
             </div>
 
             <!-- tabela -->
@@ -194,95 +161,6 @@
               </table>
             </div>
 
-            <!-- quadros com quantidades -->
-
-            <div class="col-md-6  py-2">
-              <div class="list-group">
-                <div class="list-group-item">
-                  <h3 class="pull-right">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  </h3>
-                  <h4 class="list-group-item-heading count">
-                    1000</h4>
-                  <p class="list-group-item-text">
-                    Atendimentos efetuados até o momento</p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-6 py-2">
-              <div class="list-group">
-                <div class="list-group-item">
-                  <h3 class="pull-right">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  </h3>
-                  <h4 class="list-group-item-heading count">
-                    100 | 10% </h4>
-                  <p class="list-group-item-text">
-                    Atendimentos em aberto </p>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-3 p-2">
-              <div class="list-group">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">
-                    Tipo de atedimento: Reclamação</p>
-                  <h4 class="list-group-item-heading count">
-                    15/100</h4>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-md-3 p-2">
-              <div class="list-group">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">
-                    Tipo de atedimento: Reclamação</p>
-                  <h4 class="list-group-item-heading count">
-                    15/100</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3 p-2">
-              <div class="list-group">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">
-                    Tipo de atedimento: Reclamação</p>
-                  <h4 class="list-group-item-heading count">
-                    15/100</h4>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Formulário  -->
-
-            <div class="form d-flex flex-row w-100">
-
-              <form action="index.html" class="col-12 p-0 m-0">
-                <input required type="email" name="Email" class="form-control col-5" placeholder="Email" />
-
-                <input required type="password" name="Senha" class="form-control col-5" placeholder="Senha" />
-
-                <input required type="password" name="Senha" class="form-control col-10" placeholder="Senha" />
-                <textarea  class="form-control col-10"  placeholder="Description"></textarea>
-               
-                <div class="col-12 p-0 pt-2">
-                  <input type="submit" value="Cancelar" class="btn btn-secondary col-3" />
-                  <input type="submit" value="Criar" class="btn btn-success col-3" />
-
-                </div>
-              </form>
-            </div>
-
-
-
             <!-- Modal project -->
             <div id="modal-project" class="modal fade" role="dialog">
               <div class="modal-dialog">
@@ -335,25 +213,6 @@
               </div>
             </div>
 
-            <!-- Modal confirm -->
-            <div id="modal-confirm" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header login-header">
-                    <h4 class="modal-title">Deseja realizar essa ação?</h4>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="add-modal" data-dismiss="modal">
-                      Sim
-                    </button>
-                    <button type="button" class="cancel" data-dismiss="modal">
-                      Não
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
 
 
             <!-- FIM DE CONTEÚDO  -->
