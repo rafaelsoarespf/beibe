@@ -30,15 +30,23 @@
 
             <li>
               <a href="func-home.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Atendimentos</span></a>
+                  class="hidden-xs hidden-sm">Cadastro Categoria</span></a>
             </li>
             <li class="active">
               <a href="func-categ.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Categorias</span></a>
+                  class="hidden-xs hidden-sm">Atendimentos em Aberto</span></a>
             </li>
             <li>
               <a href="func-prod.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
-                  class="hidden-xs hidden-sm">Produtos</span></a>
+                  class="hidden-xs hidden-sm">Atendimentos</span></a>
+            </li>
+            <li>
+              <a href="func-prod.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Cadastro da Categoria</span></a>
+            </li>
+            <li>
+              <a href="func-prod.html"><i class="fa fa-tasks" aria-hidden="true"></i><span
+                  class="hidden-xs hidden-sm">Cadastro de Produto</span></a>
             </li>
 
           </ul>
@@ -64,106 +72,31 @@
             <!-- Botão para abrir modal  -->
 
             <li class="pt-4">
-              <a href="#" class="add-modal" data-toggle="modal" data-target="#modal-project">Add Project</a>
+              <a href="#" class="add-modal" data-toggle="modal" data-target="#modal-project">Nova Categoria</a>
             </li>
 
             <!-- Texto Título -->
             <div class="w-100">
-              <h2 class="text-center">Atendimentos</h2>
+              <h2 class="text-center">Cadastro Categoria</h2>
             </div>
 
-            <!-- tabela -->
-            <div class="table-responsive-sm w-100 py-2">
-              <table class="table align-middle mb-0 bg-white">
-                <thead class="bg-light">
-                  <tr>
-                    <th>ID</th>
-                    <th>Produto</th>
-                    <th>Abertura</th>
-                    <th>Status</th>
-                    <th>Resolver</th>
-                    <th>Editar</th>
+            <!-- Formulário  -->
+            <div class="form d-flex flex-row w-100">
+              <form action="index.html" class="col-5 p-0 m-0">
+              <label for="tipoAtendimento">Categorias</label>
+              <select class="form-control col-10 mb-3 p-2" class="form-select" aria-label="Default select example">
+                <option selected>Lista de Categorias Cadastradas</option>
+                <option value="categoria1">Categoria 1</option>
+                <option value="categoria2">Categoria 2</option>
+                <option value="categoria3">Categoria 3</option>
+              </select>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="fw-normal mb-1">123</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">Creme</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">14/05/2022</p>
-                    </td>
-                    <td>
-                      <span class="badge badge-success rounded-pill d-inline">Active</span>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>                    
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
-                      </button></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="fw-normal mb-1">123</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">Creme</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">14/05/2022</p>
-                    </td>
-                    <td>
-                      <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
-                    </td>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
-                      </button></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p class="fw-normal mb-1">123</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">Creme</p>
-                    </td>
-                    <td>
-                      <p class="fw-normal mb-1">14/05/2022</p>
-                    </td>
-                    <td>
-                      <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
-                      </button></a>
-                    </td>
-                  </tr>
+              <input required type="text" name="Nome" class="form-control col-10" placeholder="Nome Categoria" />
 
-                </tbody>
-              </table>
+              <input type="submit" value="Remover Categoria" class="btn btn-secondary col-3" />
+
             </div>
+
 
             <!-- Modal project -->
             <div id="modal-project" class="modal fade" role="dialog">
@@ -171,46 +104,17 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header login-header">
-                    <h4 class="modal-title">Add Project</h4>
+                    <h4 class="modal-title">Nova Categoria</h4>
                   </div>
                   <div class="modal-body">
-                    <input type="text" placeholder="Project Title" name="name" />
-                    <input type="text" placeholder="Post of Post" name="mail" />
-                    <input type="text" placeholder="Author" name="passsword" />
-                    <textarea placeholder="Desicrption"></textarea>
+                    <input type="text" placeholder="Nome Categoria" name="name" />
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="cancel" data-dismiss="modal">
-                      Close
+                      Cancelar
                     </button>
                     <button type="button" class="add-modal" data-dismiss="modal">
-                      Save
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Modal form -->
-            <div id="modal-form" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header login-header">
-                    <h4 class="modal-title">Add Project</h4>
-                  </div>
-                  <div class="modal-body">
-                    <input type="text" placeholder="Project Title" name="name" />
-                    <input type="text" placeholder="Post of Post" name="mail" />
-                    <input type="text" placeholder="Author" name="passsword" />
-                    <textarea placeholder="Description"></textarea>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="cancel" data-dismiss="modal">
-                      Close
-                    </button>
-                    <button type="button" class="add-modal" data-dismiss="modal">
-                      Save
+                      Salvar
                     </button>
                   </div>
                 </div>
