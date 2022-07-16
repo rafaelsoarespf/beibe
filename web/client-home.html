@@ -87,8 +87,7 @@
                   <th>Produto</th>
                   <th>Abertura</th>
                   <th>Status</th>
-                  <th>Resolver</th>
-                  <th>Editar</th>
+                  <th>Abrir</th>
 
                 </tr>
               </thead>
@@ -104,16 +103,12 @@
                     <p class="fw-normal mb-1">14/05/2022</p>
                   </td>
                   <td>
-                    <span class="badge badge-success rounded-pill d-inline">Active</span>
+                    <span class="badge badge-success rounded-pill d-inline">Aberto</span>
                   </td>
-                  <td>
-                    <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Resolver
-                    </button></a>                    
-                  </td>
+                  
                   <td>
                     <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Editar
+                      Abrir
                     </button></a>
                   </td>
                 </tr>
@@ -128,17 +123,12 @@
                     <p class="fw-normal mb-1">14/05/2022</p>
                   </td>
                   <td>
-                    <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                    <span class="badge badge-secondary rounded-pill d-inline">Encerrado</span>
                   </td>
-                  </td>
-                  <td>
-                    <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Resolver
-                    </button></a>
                   </td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Editar
+                      Abrir
                     </button></a>
                   </td>
                 </tr>
@@ -153,16 +143,11 @@
                     <p class="fw-normal mb-1">14/05/2022</p>
                   </td>
                   <td>
-                    <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                  </td>
-                  <td>
-                    <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Resolver
-                    </button></a>
+                    <span class="badge badge-success rounded-pill d-inline">Aberto</span>
                   </td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                      Editar
+                      Abrir
                     </button></a>
                   </td>
                 </tr>
@@ -177,20 +162,20 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header login-header">
-                    <h4 class="modal-title">Add Project</h4>
+                    <h4 class="modal-title">Informações Atendimento</h4>
                   </div>
                   <div class="modal-body">
-                    <input type="text" placeholder="Project Title" name="name" />
-                    <input type="text" placeholder="Post of Post" name="mail" />
-                    <input type="text" placeholder="Author" name="passsword" />
-                    <textarea placeholder="Description"></textarea>
+                    <input type="text" placeholder="Tipo de Atendimento" name="tipoAtendimento" />
+                    <input type="text" placeholder="Categoria" name="categoriaAtendimento" />
+                    <input type="text" placeholder="Produto" name="produto" />
+                    <textarea placeholder="Descrição"></textarea>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="cancel" data-dismiss="modal">
-                      Close
+                      Fechar
                     </button>
                     <button type="button" class="add-modal" data-dismiss="modal">
-                      Save
+                      Remover Atendimento
                     </button>
                   </div>
                 </div>

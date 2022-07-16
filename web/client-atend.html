@@ -84,7 +84,17 @@
             <div class="form d-flex flex-row w-100">
 
               <form action="index.html" class="col-12 p-0 m-0">
-                <input required type="email" name="Email" class="form-control col-5" placeholder="Email" />
+                <label for="tipoAtendimento">Tipo de Atendimento</label>
+                <select id="tipoAtendimento" class="form-select" aria-label="Default select example">
+                  <option selected>Selecione...</option>
+                  <option value="reclamacao">Reclamação</option>
+                  <option value="problema">Problema</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="critica">Critica</option>
+
+                </select>
+                l for=
+                <input id="" required type="email" name="tipoAtendimento" class="form-control col-5" placeholder="Tipo Atendimento" />
 
                 <input required type="password" name="Senha" class="form-control col-5" placeholder="Senha" />
 
