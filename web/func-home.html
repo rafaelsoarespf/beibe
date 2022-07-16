@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
+  <title>Home Page - Atendimentos</title>
 
   <!-- CSS only -->
   <link rel="stylesheet" href="css/style.css" />
@@ -49,7 +49,7 @@
         <div class="row">
           <header class="d-flex flex-row">
             <div class="p-2 col-9 text-left">
-              <p>Seja bem vindo(a) Usuário</p>
+              <p>Seja bem vindo(a) Funcionário!</p>
             </div>
             <div class="p-2 col-3 text-right">
               <p><a href="login.html">Sair</a></p>
@@ -61,7 +61,22 @@
           <div class="row">
             <!-- INICIO DE CONTEÚDO  -->
 
-
+              <!-- Filtro  -->
+              <div class="pt-3 col-md-5 col-sm-5">
+                <div class="sales">
+                  <h2>Atendimento</h2>
+                    <div class="btn-group">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">          
+                        <span>Status</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a href="#">Todos</a>
+                        <a href="#">Aberto</a>
+                        <a href="#">Encerrado</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             <!-- Texto Título -->
             <div class="w-100">
@@ -73,12 +88,11 @@
               <table class="table align-middle mb-0 bg-white">
                 <thead class="bg-light">
                   <tr>
-                    <th>ID</th>
+                    <th>ID Atendimento</th>
                     <th>Produto</th>
-                    <th>Abertura</th>
+                    <th>Data em aberto</th>
                     <th>Status</th>
                     <th>Resolver</th>
-                    <th>Editar</th>
 
                   </tr>
                 </thead>
@@ -94,16 +108,11 @@
                       <p class="fw-normal mb-1">14/05/2022</p>
                     </td>
                     <td>
-                      <span class="badge badge-success rounded-pill d-inline">Active</span>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>                    
+                      <span class="badge badge-success rounded-pill d-inline">Aberto</span>
                     </td>
                     <td>
                       <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
+                        Resolver
                       </button></a>
                     </td>
                   </tr>
@@ -118,17 +127,12 @@
                       <p class="fw-normal mb-1">14/05/2022</p>
                     </td>
                     <td>
-                      <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                      <span class="badge badge-primary rounded-pill d-inline">Encerrado</span>
                     </td>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>
                     </td>
                     <td>
                       <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
+                        Resolver
                       </button></a>
                     </td>
                   </tr>
@@ -143,16 +147,11 @@
                       <p class="fw-normal mb-1">14/05/2022</p>
                     </td>
                     <td>
-                      <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                    </td>
-                    <td>
-                      <a href="#" data-toggle="modal" data-target="#modal-confirm"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Resolver
-                      </button></a>
+                      <span class="badge badge-primary rounded-pill d-inline">Encerrado</span>
                     </td>
                     <td>
                       <a href="#" data-toggle="modal" data-target="#modal-form"><button type="button" class="btn btn-link btn-sm btn-rounded">
-                        Editar
+                        Resolver
                       </button></a>
                     </td>
                   </tr>
@@ -167,7 +166,7 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header login-header">
-                    <h4 class="modal-title">Add Project</h4>
+                    <h4 class="modal-title">Resolução</h4>
                   </div>
                   <div class="modal-body">
                     <input type="text" placeholder="Project Title" name="name" />
@@ -193,13 +192,21 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header login-header">
-                    <h4 class="modal-title">Add Project</h4>
+                    <h4 class="modal-title">Resolução</h4>
                   </div>
                   <div class="modal-body">
-                    <input type="text" placeholder="Project Title" name="name" />
-                    <input type="text" placeholder="Post of Post" name="mail" />
-                    <input type="text" placeholder="Author" name="passsword" />
-                    <textarea placeholder="Description"></textarea>
+                    <span>Nome</span>
+                    <input type="text" placeholder="Nome do cliente" value="Sr Arroz" name="name" />
+                    <span>Data</span>
+                    <input type="datetime-local" placeholder="Data" name="date" />
+                    <span>Tipo do Atendimento</span>
+                    <input type="text" placeholder="Tipo do Atendimento" value="Especial" name="tipo do atendimento" />
+                    <span>Categoria</span>
+                    <input type="text" placeholder="Categoria" value="Comida" name="categoria" />
+                    <span>Produto</span>
+                    <input type="text" placeholder="Produto" value="Arroz" name="`produto" />
+                    <textarea placeholder="Descrição"></textarea>
+                    <textarea placeholder="Solução"></textarea>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="cancel" data-dismiss="modal">
